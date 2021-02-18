@@ -1,5 +1,7 @@
 # Hardhat Dotenv
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+
 Dotenv wrapper for Hardhat
 
 ## Usage
