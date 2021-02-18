@@ -1,0 +1,50 @@
+{
+  "name": "@sushiswap/hardhat-dovenv",
+  "version": "1.0.0",
+  "description": "Dotenv wrapper for Hardhat",
+  "keywords": [
+    "hardhat"
+  ],
+  "homepage": "https://github.com/sushiswap/hardhat-dovenv#readme",
+  "bugs": {
+    "url": "https://github.com/sushiswap/hardhat-dovenv/issues",
+    "email": "bugs@sushi.com"
+  },
+  "license": "MIT",
+  "author": "Matthew Lilley <hello@matthewlilley.com>",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "mocha --exit --recursive 'test/**/*.test.ts'"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "eslint --cache --fix",
+      "prettier --write"
+    ],
+    "*.test.ts": "mocha --exit --recursive",
+    "*.md": "prettier --write"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "@types/chai": "^4.0.0",
+    "@types/mocha": "^8.0.0",
+    "@types/node": "^14.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.0.0",
+    "@typescript-eslint/parser": "^4.0.0",
+    "chai": "^4.2.0",
+    "dotenv": "^8.0.0",
+    "eslint": "^7.20.0",
+    "hardhat": "^2.0.0",
+    "husky": "^5.0.0",
+    "lint-staged": "^10.5.0",
+    "prettier": "^2.2.1",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.0"
+  },
+  "peerDependencies": {
+    "dotenv": "^8.0.0",
+    "hardhat": "^2.0.0"
+  }
+}
